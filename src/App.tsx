@@ -38,7 +38,7 @@ class App extends React.Component<{}, ISideDrawerState> {
 
     return (
       <Router>
-        <div className="App">
+        <div className={styles.app}>
           <Navbar drawToggleClickHandler={this.drawToggleClickHandler} />
           <SideDrawer {...sideDrawerOption} />
           {backDrop}
