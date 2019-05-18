@@ -2,7 +2,7 @@ import * as React from 'react';
 import { IconContext } from 'react-icons';
 import { GoMarkGithub } from 'react-icons/go';
 
-import './About.css';
+import styles from './About.module.scss';
 
 class About extends React.Component {
   constructor(props: {}) {
@@ -12,14 +12,14 @@ class About extends React.Component {
   public render() {
     return (
       <div>
-        <h1 className="about-page__title">About</h1>
-        <div className="about-page__card">
-          <table className="about-page__table">
+        <h1 className={styles.title}>About</h1>
+        <div className={styles.card}>
+          <table className={styles.table}>
             <tr>
               <th>Name</th>
               <td>Yu Nishimura</td>
             </tr>
-            <tr className="about-page__icons">
+            <tr className={styles.icons}>
               <td>
                 <IconContext.Provider value={{ size: "5em" }}>
                   <GoMarkGithub />>

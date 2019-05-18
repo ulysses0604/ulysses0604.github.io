@@ -1,6 +1,6 @@
 import * as React from 'react';
 
-import './Home.css';
+import styles from './Home.module.scss';
 
 class Home extends React.Component {
   constructor(props: {}) {
@@ -10,7 +10,7 @@ class Home extends React.Component {
   public render() {
     return (
       <div>
-        <h1 className="home-page__title">Yu Nishimura Portfolio Site</h1>
+        <h1 className={styles.title}>Yu Nishimura Portfolio Site</h1>
       </div>
     );
   }
