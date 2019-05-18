@@ -11,7 +11,7 @@ class Skills extends React.Component {
   public render() {
     return (
       <div>
-        <h1 className="skills-page__title">Skills</h1>
+        <h1 className={styles.title}>Skills</h1>
         <Container fluid={true} className={styles.container}>
           <Row>
             <Col xs="12" lg="4">

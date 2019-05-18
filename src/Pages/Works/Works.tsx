@@ -19,7 +19,7 @@ class Works extends React.Component {
                 <CardBody>
                   <CardTitle>Hoge1</CardTitle>
                   <CardText>hogehogehoge</CardText>
-                  <div className={styles.source_link}>
+                  <div className={styles.sourceLink}>
                     <a href="hoge">URL</a>
                   </div>
                 </CardBody>
@@ -30,7 +30,7 @@ class Works extends React.Component {
                 <CardBody>
                   <CardTitle>Hoge2</CardTitle>
                   <CardText>hogehogehoge</CardText>
-                  <div className={styles.source_link}>
+                  <div className={styles.sourceLink}>
                     <a href="hoge">URL</a>
                   </div>
                 </CardBody>
