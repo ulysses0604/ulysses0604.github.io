@@ -11,7 +11,7 @@ class About extends React.Component {
 
   public render() {
     return (
-      <main className="main">
+      <div>
         <h1 className="about-page__title">About</h1>
         <div className="about-page__card">
           <table className="about-page__table">
@@ -28,7 +28,7 @@ class About extends React.Component {
             </tr>
           </table>
         </div>
-      </main>
+      </div>
     );
   }
 }

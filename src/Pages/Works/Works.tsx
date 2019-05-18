@@ -10,11 +10,11 @@ class Works extends React.Component {
 
   public render() {
     return (
-      <main className="main">
+      <div>
         <h1 className="works-page__title">Works</h1>
         <Container fluid={true} className="works-page__container">
           <Row>
-            <Col xs="12" md="4">
+            <Col xs="12" lg="4">
               <Card className="works-page__card">
                 <CardBody>
                   <CardTitle>Hoge1</CardTitle>
@@ -25,7 +25,7 @@ class Works extends React.Component {
                 </CardBody>
               </Card>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs="12" lg="4">
               <Card className="works-page__card">
                 <CardBody>
                   <CardTitle>Hoge2</CardTitle>
@@ -38,7 +38,7 @@ class Works extends React.Component {
             </Col>
           </Row>
         </Container>
-      </main>
+      </div>
     );
   }
 }

@@ -9,9 +9,9 @@ class Home extends React.Component {
 
   public render() {
     return (
-      <main className="main">
+      <div>
         <h1 className="home-page__title">Yu Nishimura Portfolio Site</h1>
-      </main>
+      </div>
     );
   }
 }

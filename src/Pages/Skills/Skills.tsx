@@ -10,11 +10,11 @@ class Skills extends React.Component {
 
   public render() {
     return (
-      <main className="main">
+      <div>
         <h1 className="skills-page__title">Skills</h1>
         <Container fluid={true} className="skills-page__container">
           <Row>
-            <Col xs="12" md="4">
+            <Col xs="12" lg="4">
               <Toast className="skills-page__toast">
                 <ToastHeader icon="info">
                   Hoge1
@@ -24,7 +24,7 @@ class Skills extends React.Component {
                 </ToastBody>
               </Toast>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs="12" lg="4">
               <Toast className="skills-page__toast">
                 <ToastHeader icon="info">
                   Hoge2
@@ -34,7 +34,7 @@ class Skills extends React.Component {
                 </ToastBody>
               </Toast>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs="12" lg="4">
               <Toast className="skills-page__toast">
                 <ToastHeader icon="info">
                   Hoge3
@@ -44,7 +44,7 @@ class Skills extends React.Component {
                 </ToastBody>
               </Toast>
             </Col>
-            <Col xs="12" md="4">
+            <Col xs="12" lg="4">
               <Toast className="skills-page__toast">
                 <ToastHeader icon="info">
                   Hoge4
@@ -56,7 +56,7 @@ class Skills extends React.Component {
             </Col>
           </Row>
         </Container>
-      </main>
+      </div>
     );
   }
 }

@@ -38,13 +38,15 @@ class App extends React.Component<{}, ISideDrawerState> {
           <Navbar drawToggleClickHandler={this.drawToggleClickHandler} />
           <SideDrawer show={this.state.isOpen} drawToggleClickHandler={this.drawToggleClickHandler} />
           {backDrop}
-          <Switch>
-            <Route path="/about" component={About} />
-            <Route path="/works" component={Works} />
-            <Route path="/skills" component={Skills} />
-            <Route path="/" component={Home} />
-            <Route component={Home} />
-          </Switch>
+          <div className="main">
+            <Switch>
+              <Route path="/about" component={About} />
+              <Route path="/works" component={Works} />
+              <Route path="/skills" component={Skills} />
+              <Route path="/" component={Home} />
+              <Route component={Home} />
+            </Switch>
+          </div>
         </div>
       </Router>
     );
