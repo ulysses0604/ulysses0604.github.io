@@ -1,6 +1,6 @@
 import * as React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import styles from './App.module.scss';
+import styled, { createGlobalStyle } from "styled-components";
 
 import Backdrop from './Components/Backdrop/Backdrop';
 import Navbar from './Components/Navbar/Navbar';
@@ -38,11 +38,12 @@ class App extends React.Component<{}, ISideDrawerState> {
 
     return (
       <Router>
-        <div className={styles.app}>
+        <div className="App">
+          <GlobalStyle />
           <Navbar drawToggleClickHandler={this.drawToggleClickHandler} />
           <SideDrawer {...sideDrawerOption} />
           {backDrop}
-          <div className={styles.main}>
+          <MainWrapper>
             <Switch>
               <Route path="/about" component={About} />
               <Route path="/works" component={Works} />
@@ -50,7 +51,7 @@ class App extends React.Component<{}, ISideDrawerState> {
               <Route path="/" component={Home} />
               <Route component={Home} />
             </Switch>
-          </div>
+          </MainWrapper>
         </div>
       </Router>
     );
@@ -70,3 +71,25 @@ class App extends React.Component<{}, ISideDrawerState> {
 }
 
 export default App;
+
+const GlobalStyle = createGlobalStyle`
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    // background-image: url('./images/EchoCat.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: right bottom;
+    background-size: 38% 38%;
+  }
+`;
+
+const MainWrapper = styled.main`
+    height: 100%;
+    text-align: center;
+`;
