@@ -1,7 +1,7 @@
-import * as React from 'react';
-import { Card, CardBody, CardText, CardTitle, Col, Container, Row } from 'reactstrap';
+import * as React from "react";
+import { Card, CardBody, CardText, CardTitle, Col, Container, Row } from "reactstrap";
 
-import styles from './Works.module.scss';
+import styled from "styled-components";
 
 class Works extends React.Component {
   constructor(props: {}) {
@@ -11,36 +11,59 @@ class Works extends React.Component {
   public render() {
     return (
       <div>
-        <h1 className={styles.title}>Works</h1>
-        <Container fluid={true} className={styles.container}>
+        <PageTitle>Works</PageTitle>
+        <CardContainer fluid={true}>
           <Row>
             <Col xs="12" lg="4">
-              <Card className={styles.card}>
+              <WorksCard>
                 <CardBody>
                   <CardTitle>Hoge1</CardTitle>
                   <CardText>hogehogehoge</CardText>
-                  <div className={styles.sourceLink}>
+                  <SourceLink>
                     <a href="hoge">URL</a>
-                  </div>
+                  </SourceLink>
                 </CardBody>
-              </Card>
+              </WorksCard>
             </Col>
             <Col xs="12" lg="4">
-              <Card className={styles.card}>
+              <WorksCard>
                 <CardBody>
                   <CardTitle>Hoge2</CardTitle>
                   <CardText>hogehogehoge</CardText>
-                  <div className={styles.sourceLink}>
+                  <SourceLink>
                     <a href="hoge">URL</a>
-                  </div>
+                  </SourceLink>
                 </CardBody>
-              </Card>
+              </WorksCard>
             </Col>
           </Row>
-        </Container>
+        </CardContainer>
       </div>
     );
   }
 }
 
 export default Works;
+
+const PageTitle = styled.h1`
+  font-size: 3.5rem;
+  margin-top: 10vh;
+`;
+
+const CardContainer = styled(Container)`
+  max-width: 1200px;
+  margin: 5vh auto;
+`;
+
+const WorksCard = styled(Card)`
+  max-width: 400px;
+  height: 300px;
+  margin-bottom: 30px;
+`;
+
+const SourceLink = styled.div`
+  position: absolute;
+  bottom: 0;
+  left: 35 %;
+  margin: 20px 0;
+`;

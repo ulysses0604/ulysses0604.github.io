@@ -2,13 +2,13 @@ import * as React from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import styled, { createGlobalStyle } from "styled-components";
 
-import Backdrop from './Components/Backdrop/Backdrop';
-import Navbar from './Components/Navbar/Navbar';
-import SideDrawer from './Components/SideDrawer/SideDrawer';
-import Home from './Pages/Home/Home';
-import About from './Pages/About/About';
-import Works from './Pages/Works/Works';
-import Skills from './Pages/Skills/Skills';
+import Backdrop from './Components/Backdrop';
+import Navbar from './Components/Navbar';
+import SideDrawer from './Components/SideDrawer';
+import Home from './Pages/Home';
+import About from './Pages/About';
+import Works from './Pages/Works';
+import Skills from './Pages/Skills';
 
 interface ISideDrawerState {
   isOpen: boolean;

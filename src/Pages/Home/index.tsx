@@ -1,6 +1,6 @@
-import * as React from 'react';
+import * as React from "react";
 
-import styles from './Home.module.scss';
+import styled from "styled-components";
 
 class Home extends React.Component {
   constructor(props: {}) {
@@ -10,10 +10,22 @@ class Home extends React.Component {
   public render() {
     return (
       <div>
-        <h1 className={styles.title}>Yu Nishimura Portfolio Site</h1>
+        <PageTitle>Yu Nishimura Portfolio Site</PageTitle>
       </div>
     );
   }
 }
 
 export default Home;
+
+const PageTitle = styled.h1`
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    margin-top: 20vh;
+  }
+
+  @media (min-width: 769px) {
+    font-size: 3.5rem;
+    margin-top: 40vh;
+  }
+`;

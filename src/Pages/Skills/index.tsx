@@ -1,8 +1,8 @@
-import * as React from 'react';
-import { Toast, ToastBody, ToastHeader, Col, Container, Row } from 'reactstrap';
+import * as React from "react";
+import { Toast, ToastBody, ToastHeader, Col, Container, Row } from "reactstrap";
 
-import styles from './Skills.module.scss';
-import contents from './SkillsContents.json';
+import styled from "styled-components";
+import contents from "./SkillsContents.json";
 
 class Skills extends React.Component {
   constructor(props: {}) {
@@ -12,26 +12,42 @@ class Skills extends React.Component {
   public render() {
     return (
       <div>
-        <h1 className={styles.title}>Skills</h1>
-        <Container fluid={true} className={styles.container}>
+        <PageTitle>Skills</PageTitle>
+        <SkillsContainer fluid={true}>
           <Row>
             { contents.map(item => (
               <Col xs={12} lg={4}>
-                <Toast className={styles.toast}>
+                <SkillsToast>
                   <ToastHeader icon="info">
                     {item.title}
                 </ToastHeader>
                   <ToastBody>
                     {item.text}
                 </ToastBody>
-                </Toast>
+                </SkillsToast>
               </Col>
             )) }
           </Row>
-        </Container>
+        </SkillsContainer>
       </div>
     );
   }
 }
 
 export default Skills;
+
+const PageTitle = styled.h1`
+  font-size: 3.5rem;
+  margin-top: 10vh;
+`;
+
+const SkillsContainer = styled(Container)`
+  max-width: 1300px;
+  margin: 5vh auto;
+`;
+
+const SkillsToast = styled(Toast)`
+  max-width: 400px;
+  height: 300px;
+  margin-bottom: 30px;
+`;
