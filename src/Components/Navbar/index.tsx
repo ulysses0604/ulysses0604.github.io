@@ -28,13 +28,13 @@ class Navbar extends React.Component<IProps, {}> {
           <NavigationItemsWrapper>
             <ul>
               <Link to="/about">
-                <li>about</li>
+                <li>About</li>
               </Link>
               <Link to="/works">
-                <li>works</li>
+                <li>Works</li>
               </Link>
               <Link to="/skills">
-                <li>skills</li>
+                <li>Skills</li>
               </Link>
             </ul>
           </NavigationItemsWrapper>
@@ -56,7 +56,8 @@ const NavigationBar = styled.header`
   left: 0px;
   width: 100%;
   height: 56px;
-  background: #df4848;
+  background: #889bc3;
+  border-top: 2px solid #6d7a93;
 `;
 
 const Navigation = styled.nav`
@@ -76,10 +77,14 @@ const MenuIconWrapper = styled.div`
 const TitleWrapper = styled(Link)`
   color: white;
   font-size: 1.5rem;
-  padding: 0 1rem;
+  padding: 0 1rem 4px;
   text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  
   @media (min-width: 769px) {
-    padding: 0 0rem;
+    padding: 0 0rem 4px;
   }
 `;
 
@@ -89,20 +94,26 @@ const GrowWrapper = styled.div`
 
 const NavigationItemsWrapper = styled.div`
   height: 100%;
-    & ul {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
+  & ul {
+    list-style: none;
+    line-height: 1.3em;
+    margin: 0;
+    padding: 0 2em 0 0;
+    display: flex;
   }
-    & li {
-      padding: 16px 1rem;
+  & li {
+    padding: 16px 2rem;
   }
-    & a {
-      color: white;
+  & a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+
+    &:hover {
       text-decoration: none;
+    }
   }
-    @media (max-width: 768px) {
-      display: none;
+  @media (max-width: 768px) {
+    display: none;
   }
 `;

@@ -2,6 +2,8 @@ import * as React from "react";
 import { Card, CardBody, CardText, CardTitle, Col, Container, Row } from "reactstrap";
 
 import styled from "styled-components";
+import system from "./SystemDevelopments.json";
+import website from "./WebsiteDevelopments.json";
 
 class Works extends React.Component {
   constructor(props: {}) {
@@ -12,30 +14,42 @@ class Works extends React.Component {
     return (
       <div>
         <PageTitle>Works</PageTitle>
+        <PageTitle>System Developments</PageTitle>
         <CardContainer fluid={true}>
           <Row>
+            { system.map(item => (
             <Col xs="12" lg="4">
               <WorksCard>
                 <CardBody>
-                  <CardTitle>Hoge1</CardTitle>
-                  <CardText>hogehogehoge</CardText>
-                  <SourceLink>
-                    <a href="hoge">URL</a>
-                  </SourceLink>
+                  <CardTitle>{ item.title }</CardTitle>
+                  <CardText>{ item.text }</CardText>
+                  { item.url ? <SourceLink><a href={ item.url } target='_blank'>SEE IT ONLINE</a></SourceLink> : "" }
+                  { item.period ? <p>{ item.period }</p> : "" }
+                  { item.charge ? <p>{ item.charge }</p> : "" }
+                  { item.tools ? <p>{ item.tools }</p> : "" }
                 </CardBody>
               </WorksCard>
             </Col>
-            <Col xs="12" lg="4">
-              <WorksCard>
-                <CardBody>
-                  <CardTitle>Hoge2</CardTitle>
-                  <CardText>hogehogehoge</CardText>
-                  <SourceLink>
-                    <a href="hoge">URL</a>
-                  </SourceLink>
-                </CardBody>
-              </WorksCard>
-            </Col>
+            ))}
+          </Row>
+        </CardContainer>
+
+        <PageTitle>Website Developments</PageTitle>
+        <CardContainer fluid={true}>
+          <Row>
+            {website.map(item => (
+              <Col xs="12" lg="4">
+                <WorksCard>
+                  <CardBody>
+                    <CardTitle>{item.title}</CardTitle>
+                    <CardText>{item.text}</CardText>
+                    {item.url ? <SourceLink><a href={item.url} target='_blank'>SEE IT ONLINE</a></SourceLink> : ""}
+                    {item.charge ? <p>{item.charge}</p> : ""}
+                    {item.tools ? <p>{item.tools}</p> : ""}
+                  </CardBody>
+                </WorksCard>
+              </Col>
+            ))}
           </Row>
         </CardContainer>
       </div>
@@ -51,7 +65,7 @@ const PageTitle = styled.h1`
 `;
 
 const CardContainer = styled(Container)`
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 5vh auto;
 `;
 

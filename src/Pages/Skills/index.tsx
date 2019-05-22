@@ -20,10 +20,10 @@ class Skills extends React.Component {
                 <SkillsToast>
                   <ToastHeader icon="info">
                     {item.title}
-                </ToastHeader>
-                  <ToastBody>
-                    {item.text}
-                </ToastBody>
+                  </ToastHeader>
+                    <ToastBody>
+                      {item.text}
+                  </ToastBody>
                 </SkillsToast>
               </Col>
             )) }

@@ -19,6 +19,8 @@ class Home extends React.Component {
 export default Home;
 
 const PageTitle = styled.h1`
+  color: #3f485b;
+  
   @media (max-width: 768px) {
     font-size: 2rem;
     margin-top: 20vh;

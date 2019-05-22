@@ -19,6 +19,26 @@ class About extends React.Component {
               <th>Name</th>
               <td>Yu Nishimura</td>
             </tr>
+            <tr>
+              <th>Age</th>
+              <td>43</td>
+            </tr>
+            <tr>
+              <th>Facebook</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Intagram</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Interests and Hobbies</th>
+              <td></td>
+            </tr>
+            <tr>
+              <th>Current Focus</th>
+              <td>React / TypeScript</td>
+            </tr>
             <tr className="icons">
               <td>
                 <IconContext.Provider value={{ size: "5em" }}>

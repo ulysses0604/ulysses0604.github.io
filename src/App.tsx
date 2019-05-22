@@ -21,8 +21,6 @@ class App extends React.Component<{}, ISideDrawerState> {
       isOpen: false,
     };
 
-    this.drawToggleClickHandler = this.drawToggleClickHandler.bind(this);
-    this.backdropClickHandler = this.backdropClickHandler.bind(this);
   };
 
   public render() {
