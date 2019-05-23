@@ -78,7 +78,8 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 62.5%;
     // background-image: url('./images/EchoCat.png');
     background-repeat: no-repeat;
     background-attachment: fixed;

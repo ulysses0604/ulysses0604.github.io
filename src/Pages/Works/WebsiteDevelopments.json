@@ -1,37 +1,50 @@
 [
   {
-    "title": "他社製レンタカー予約管理システムの自社向け改修",
-    "text": "50台以上のレンタカーを何年も紙ベースで管理していたが、効率化のためクラウド予約管理システムを導入。そのままでは自社の業務体制に合わないので多くの改修・機能追加・ユーザー向け自社レンタカー予約サイト（Rails）との連携化を行い、非効率かつ職員の負担になっていた諸々の状況を改善できた。",
+    "title": "隠岐レンタ・リース",
     "url": "https://www.oki-maekawa.com/",
-    "charge": "予約管理システム（PHP）改修とバグフィクス、自社サイト（Rails）との連携化",
-    "tools": "FuelPHP, Rails3, JavaScript, Bitbucket"
+    "charge": "一部デザイン、RailsでのMVC実装、外部の予約管理システムとの連携、SNS広告制作",
+    "filename": "img-renta.jpg"
   },
   {
-    "title": "NPO法人見守りサービス報告メール配信システム",
-    "text": "NPO法人の活動のひとつとして「高齢者の安否確認」があり、遠方に住む家族からの依頼で見守り対象者の画像を職員がシステムに登録し、依頼者に報告文と画像をメールで定期的に配信するウェブシステム。（現在はサービス停止中）",
+    "title": "海外留学保険 案内サイト",
+    "url": "https://kairyo.hoken-alivio.com/",
+    "charge": "HTMLとWordpressのコーディング・カスタマイズ、フォーム制作、SNS広告制作",
+    "filename": "img-kairyo.jpg"
+  },
+  {
+    "title": "NPO法人らとこんた",
     "url": "https://www.ratokonta.com/",
-    "charge": "サイトデザインとコーディング、ログインシステム実装、画像アップロードフォーム制作",
-    "tools": "Rails4, Bitbucket, Sketch, Illustrator, Photoshop"
+    "charge": "サイトデザイン、Railsコーディング、レスポンシブ対応、会員用ログイン、メール配信システム実装",
+    "filename": "img-ratokonta.jpg"
   },
   {
-    "title": "野球スコアリングウェブアプリ",
-    "text": "紙ベースでの野球のスコアリングと比べても遜色のない使い勝手を目指して、iPadでの使用を想定したウェブ上のスコアリングシステム。集計・速報の機能も実装した。のちにスマートフォン用スコアリングシステムの開発も開始し、一部開発に参加。",
-    "url": "",
-    "charge": "公式サイトコーディング、ウェブアプリ機能追加、アプリ内画像の作成",
-    "tools": "C#.NET, JavaScript, Visual Studio 2013, MSSQL, Subversion, Illustrator, Photoshop, Fireworks"
+    "title": "隠岐ウェブ商店街",
+    "url": "https://okiwebshop.com/",
+    "charge": "一部サイトデザイン、EC-Cubeカスタマイズと更新、受注管理、SNS広告制作、ブログとFB投稿、メルマガ作成",
+    "filename": "img-okiweb.jpg"
   },
   {
-    "title": "観光協会ウェブサイト コンテンツ管理システム",
-    "text": "地元観光協会の独自CMS。観光情報の登録・編集、観光客からの質問に地元ユーザーが回答するQ&Aシステム、コンテスト管理機能、船便・航空便の運行状況管理機能などを実装。",
-    "url": "",
-    "charge": "サイトデザイン、CMS制作",
-    "tools": "C#.NET, JavaScript, Visual Studio 2013, MSSQL, Subversion, Fireworks"
+    "title": "MAMEDAGIA FES公式サイト",
+    "url": "http://mamedagia.com/",
+    "charge": "個人で引き受けた隠岐の島町からの委託業務。cakePHPで制作",
+    "filename": "img-mamedagia.jpg"
   },
   {
-    "title": "「参議院議員選挙」速報専用サイトの速報表示Webパーツ制作",
-    "text": "「第23回 参議院議員選挙」時の選挙情報速報サイトで使用されたhtml・CSS・JavaScript部分を制作。json形式で出力される選挙候補者の票数を一定間隔で読み込み、速報サイトの「小選挙区別」「比例代表別」など複数のページに得票データを反映する部分の実装。",
-    "url": "",
-    "charge": "HTML・CSS・JavaScriptの制作",
-    "tools": "JavaScript"
+    "title": "ちょいのり保険 案内サイト",
+    "url": "https://www.tyoinorihoken.com/",
+    "charge": "Railsでのサイト更新・変更コーディング",
+    "filename": "img-choinori.jpg"
+  },
+  {
+    "title": "eサイクル保険 案内サイト",
+    "url": "https://tokio.jitensya-hoken.jp/",
+    "charge": "Railsでのサイト更新・変更コーディング",
+    "filename": "img-ecycle.jpg"
+  },
+  {
+    "title": "東京海上日動あんしん生命 保険案内サイト",
+    "url": "https://anshin.hoken-alivio.com/",
+    "charge": "Railsでの機能追加・レスポンシブ化・更新作業",
+    "filename": "img-anshin.jpg"
   }
 ]
