@@ -80,11 +80,14 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
     font-family: "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
     font-size: 62.5%;
-    // background-image: url('./images/EchoCat.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: right bottom;
     background-size: 38% 38%;
+  }
+
+  ul {
+    list-style-type: none;
   }
 `;
 

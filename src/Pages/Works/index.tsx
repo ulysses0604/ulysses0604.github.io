@@ -23,7 +23,7 @@ class Works extends React.Component {
                 <CardBody>
                   <CardTitle>{item.title}</CardTitle>
                   <CardText>{item.text}</CardText>
-                  {item.url ? <SourceLink><a href={item.url} target='_blank'>SEE IT ONLINE</a></SourceLink> : ""}
+                  {item.url ? <SourceLink><a href={item.url} target='_blank' rel="noopener noreferrer">SEE IT ONLINE</a></SourceLink> : ""}
                   {item.period ? <p>{item.period}</p> : ""}
                   {item.charge ? <p>{item.charge}</p> : ""}
                   {item.tools ? <p>{item.tools}</p> : ""}
@@ -43,11 +43,11 @@ class Works extends React.Component {
                   <CardBody>
                     <CardTitle>{item.title}</CardTitle>
                     <CardText>
-                      <a href={`${process.env.PUBLIC_URL}/img/${item.filename}`} target='_blank'>
+                      <a href={`${process.env.PUBLIC_URL}/img/${item.filename}`} target='_blank' rel="noopener noreferrer">
                         <img src={`${process.env.PUBLIC_URL}/img/${item.filename}`} alt={item.title} width="150" />
                       </a>
                     </CardText>
-                    {item.url ? <SourceLink><a href={item.url} target='_blank'>SEE IT ONLINE</a></SourceLink> : ""}
+                    {item.url ? <SourceLink><a href={item.url} target='_blank' rel="noopener noreferrer">SEE IT ONLINE</a></SourceLink> : ""}
                     {item.charge ? <p>{item.charge}</p> : ""}
                   </CardBody>
                 </WorksCard>

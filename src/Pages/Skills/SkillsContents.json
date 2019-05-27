@@ -1,10 +1,128 @@
 [
   {
-    "title": "HTML & CSS",
-    "text": "説明"
+    "category": "HTML",
+    "skill": [
+      "HTML5",
+      "JSX",
+      "Haml"
+    ],
+    "icon": [
+      "html5.png",
+      "react.png",
+      "haml.png"
+    ]
   },
   {
-    "title": "SASS",
-    "text": "説明"
+    "category": "CSS",
+    "skill": [
+      "CSS3",
+      "SASS",
+      "Bootstrap"
+    ],
+    "icon": [
+      "css3.png",
+      "sass.png",
+      "bootstrap.png"
+    ]
+  },
+  {
+    "category": "Javascript",
+    "skill": [
+      "React",
+      "TypeScript",
+      "jQuery"
+    ],
+    "icon": [
+      "react.png",
+      "typescript.png",
+      "jquery.png"
+    ]
+  },
+  {
+    "category": "Back-End",
+    "skill": [
+      "Ruby",
+      "Rails",
+      "Minitest",
+      "Rspec",
+      "php",
+      "C#",
+      "ASP.NET(Web Forms)",
+      "Python",
+      "MySQL",
+      "MS SQL"
+    ],
+    "icon": [
+      "ruby.png",
+      "rails.png",
+      "minitest.png",
+      "rspec.png",
+      "php.png",
+      "csharp.png",
+      "asp.net.png",
+      "python.png",
+      "mysql.png",
+      "mssql.png"
+    ]
+  },
+  {
+    "category": "CMS",
+    "skill": [
+      "EC-CUBE",
+      "Wordpress",
+      "Jimdo"
+    ],
+    "icon": [
+      "eccube.png",
+      "wordpress.png",
+      "jimdo.png"
+    ]
+  },
+  {
+    "category": "Version Control System",
+    "skill": [
+      "Git",
+      "Subversion",
+      "Team Foundation Server"
+    ],
+    "icon": [
+      "git.png",
+      "svn.png",
+      "tfs.png"
+    ]
+  },
+  {
+    "category": "Design Tools",
+    "skill": [
+      "illustrator",
+      "Photoshop",
+      "Sketch"
+    ],
+    "icon": [
+      "illustrator.png",
+      "photoshop.png",
+      "sketch.png"
+    ]
+  },
+  {
+    "category": "Other",
+    "skill": [
+      "Heroku",
+      "AWS",
+      "Azure",
+      "Bitbucket",
+      "Github",
+      "Docker",
+      "Redmine"
+    ],
+    "icon": [
+      "heroku.png",
+      "aws.png",
+      "azure.png",
+      "bitbucket.png",
+      "github.png",
+      "docker.png",
+      "redmine.png"
+    ]
   }
 ]
