@@ -17,8 +17,8 @@ class Works extends React.Component {
         <CategoryTitle>System Developments</CategoryTitle>
         <CardContainer fluid={true}>
           <Row>
-            {system.map(item => (
-            <Col xs="12" lg="4">
+            {system.map((item, i) => (
+            <Col key={i} xs="12" lg="4">
               <WorksCard>
                 <CardBody>
                   <CardTitle>{item.title}</CardTitle>
@@ -37,8 +37,8 @@ class Works extends React.Component {
         <CategoryTitle>Website Developments</CategoryTitle>
         <CardContainer fluid={true}>
           <Row>
-            {website.map(item => (
-              <Col xs="12" lg="4">
+            {website.map((item, i) => (
+              <Col key={i} xs="12" lg="4">
                 <WorksCard>
                   <CardBody>
                     <CardTitle>{item.title}</CardTitle>
@@ -64,7 +64,7 @@ export default Works;
 
 const PageTitle = styled.h1`
   font-size: 3.5rem;
-  margin-top: 10vh;
+  margin-top: 12vh;
 `;
 
 const CategoryTitle = styled.h2`

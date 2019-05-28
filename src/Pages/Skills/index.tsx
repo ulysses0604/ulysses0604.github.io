@@ -26,8 +26,8 @@ export default Skills;
 class ListItems extends React.Component {
   public render() {
     return (
-      contents.map(item => (
-        <Row>
+      contents.map((item, row_id) => (
+        <Row key={row_id}>
           <Col xs={12} lg={12}>
             <SkillsToast>
               <ToastHeader icon="info">
@@ -35,10 +35,10 @@ class ListItems extends React.Component {
               </ToastHeader>
               <ToastBody>
                 <ul>
-                  {item.icon.map((icn, i) => (
-                    <SkillItems>
+                  {item.icon.map((icn, item_id) => (
+                    <SkillItems key={item_id}>
                       <IconImage src={`${process.env.PUBLIC_URL}/img/skills/${icn}`} alt="" />
-                      <SkillName>{item.skill[i]}</SkillName>
+                      <SkillName>{item.skill[item_id]}</SkillName>
                     </SkillItems>
                   ))}
                 </ul>
@@ -70,7 +70,7 @@ const SkillName = styled.span`
 
 const PageTitle = styled.h1`
   font-size: 3.5rem;
-  margin-top: 10vh;
+  margin-top: 12vh;
 `;
 
 const SkillsContainer = styled(Container)`
