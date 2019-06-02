@@ -6,9 +6,6 @@ interface IProps {
 }
 
 class Backdrop extends React.Component<IProps, {}> {
-  constructor(props: IProps) {
-    super(props);
-  };
 
   public render() {
     return <BackdropWrapper onClick={this.clickHandler} />;

@@ -7,9 +7,6 @@ import website from "./WebsiteDevelopments.json";
 import ImageZoom from 'react-medium-image-zoom'
 
 class Works extends React.Component {
-  constructor(props: {}) {
-    super(props);
- }
 
   public render() {
     return (

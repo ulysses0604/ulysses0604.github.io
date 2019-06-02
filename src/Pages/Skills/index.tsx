@@ -5,9 +5,6 @@ import styled from 'styled-components';
 import contents from './SkillsContents.json';
 
 class Skills extends React.Component {
-  constructor(props: {}) {
-    super(props);
-  }
 
   public render() {
     return (
@@ -64,6 +61,15 @@ const SkillsContainer = styled(Container)`
       }
       &:nth-of-type(even){
         float: right;
+      }
+    }
+
+    div {
+      &.col-lg-12 {
+        flex: none;
+      }
+      &.col-12 {
+        flex: none;
       }
     }
   }

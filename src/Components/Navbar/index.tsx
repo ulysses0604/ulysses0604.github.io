@@ -10,9 +10,6 @@ interface IProps {
 }
 
 class Navbar extends React.Component<IProps, {}> {
-  constructor(props: IProps) {
-    super(props);
-  };
 
   public render() {
     return (
@@ -82,12 +79,14 @@ const MenuIconWrapper = styled.div`
 
 const TitleWrapper = styled(Link)`
   color: ${SiteMainColor};
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   padding: 0 1rem 4px;
   text-decoration: none;
 
-  &:hover {
+  &:hover,
+  &:visited {
     text-decoration: none;
+    color: ${SiteMainColor};
   }
   
   @media (min-width: 769px) {

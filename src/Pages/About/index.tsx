@@ -6,9 +6,6 @@ import { FaInstagram, FaFacebookSquare } from 'react-icons/fa';
 import styled from 'styled-components';
 
 class About extends React.Component {
-  constructor(props: {}) {
-    super(props);
-  }
 
   public render() {
     return (
@@ -22,7 +19,7 @@ class About extends React.Component {
                 <td>Yu Nishimura</td>
               </tr>
               <tr>
-                <th>Birth Year</th>
+                <th>Born</th>
                 <td>1976</td>
               </tr>
               <tr>

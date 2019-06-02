@@ -13,9 +13,6 @@ interface IProps extends ISideDrawerWrapperProps {
 }
 
 class SideDrawer extends React.Component<IProps, {}> {
-  constructor(props: IProps) {
-    super(props);
-  };
 
   public render() {
     return (
