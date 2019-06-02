@@ -67,7 +67,7 @@ const Card = styled.div`
   }
 
   @media(min-width: 769px) {
-    width: 45%;
+    width: 60rem;
   }
 
   table {
