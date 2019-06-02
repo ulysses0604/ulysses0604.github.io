@@ -1,6 +1,6 @@
-import * as React from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import styled, { createGlobalStyle } from "styled-components";
+import * as React from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import styled, { createGlobalStyle } from 'styled-components';
 
 import Backdrop from './Components/Backdrop';
 import Navbar from './Components/Navbar';
@@ -73,17 +73,36 @@ export default App;
 const GlobalStyle = createGlobalStyle`
   html {
     height: 100%;
+    font-size: 62.5%;
   }
 
   body {
     margin: 0;
     padding: 0;
     font-family: "游ゴシック体", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", "Osaka", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    font-size: 62.5%;
-    background-repeat: no-repeat;
+    background: transparent url('/img/bg-01.jpg') left top no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    background-position: right bottom;
-    background-size: 38% 38%;
+
+    @media (max-width: 768px) {
+      background-repeat: repeat-y;
+      background-attachment: scroll;
+    }
+  }
+
+  h1.pagetitle {
+    color: #5a657a;
+    color: #fff;
+
+    @media (max-width: 768px) {
+      font-size: 4rem;
+      margin-top: 12vh;
+    }
+
+    @media (min-width: 769px) {
+      font-size: 4.5rem;
+      margin-top: 12vh;
+    }
   }
 
   ul {

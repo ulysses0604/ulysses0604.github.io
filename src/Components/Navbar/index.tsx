@@ -1,9 +1,9 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
-import { IconContext } from "react-icons";
-import { MdMenu } from "react-icons/md";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons';
+import { MdMenu } from 'react-icons/md';
 
-import styled from "styled-components";
+import styled from 'styled-components';
 
 interface IProps {
   drawToggleClickHandler(): void,
@@ -19,7 +19,7 @@ class Navbar extends React.Component<IProps, {}> {
       <NavigationBar>
         <Navigation>
           <MenuIconWrapper onClick={this.clickHandler}>
-            <IconContext.Provider value={{ color: "white", size: "1.5em" }}>
+            <IconContext.Provider value={{ color: "#fff", size: "2.5em" }}>
               <MdMenu />
             </IconContext.Provider>
           </MenuIconWrapper>
@@ -50,14 +50,17 @@ class Navbar extends React.Component<IProps, {}> {
 
 export default Navbar;
 
+const SiteMainColor = "#6d7a93";
+
 const NavigationBar = styled.header`
   position: fixed;
   top: 0px;
   left: 0px;
   width: 100%;
   height: 56px;
-  background: #889bc3;
-  border-top: 2px solid #6d7a93;
+  background-color: #fff;
+  border-top: 2px solid ${SiteMainColor};
+  z-index: 100;
 `;
 
 const Navigation = styled.nav`
@@ -69,22 +72,30 @@ const Navigation = styled.nav`
 `;
 
 const MenuIconWrapper = styled.div`
+  background-color: ${SiteMainColor};
+  padding: 4px 4px;
+
   @media (min-width: 769px) {
     display: none;
   }
 `;
 
 const TitleWrapper = styled(Link)`
-  color: white;
-  font-size: 1.5rem;
+  color: ${SiteMainColor};
+  font-size: 2.5rem;
   padding: 0 1rem 4px;
   text-decoration: none;
+
   &:hover {
     text-decoration: none;
   }
   
   @media (min-width: 769px) {
     padding: 0 0rem 4px;
+  }
+  @media (max-width: 768px) {
+    width: 29rem;
+    text-align: center;
   }
 `;
 
@@ -94,25 +105,30 @@ const GrowWrapper = styled.div`
 
 const NavigationItemsWrapper = styled.div`
   height: 100%;
-  & ul {
+  
+  ul {
     list-style: none;
     line-height: 1.3em;
     margin: 0;
     padding: 0 2em 0 0;
     display: flex;
-  }
-  & li {
-    padding: 16px 2rem;
-  }
-  & a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
+    height: 100%;
 
-    &:hover {
+    a {
+      color: ${SiteMainColor};
       text-decoration: none;
+      font-size: 2.2rem;
+
+      &:hover {
+        text-decoration: none;
+      }
+
+      li {
+        padding: 18px 2rem;
+      }
     }
   }
+  
   @media (max-width: 768px) {
     display: none;
   }

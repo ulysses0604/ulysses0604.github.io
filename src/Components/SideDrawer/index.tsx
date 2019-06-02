@@ -1,6 +1,8 @@
-import * as React from "react";
-import { Link } from "react-router-dom";
-import styled, { css } from "styled-components";
+import * as React from 'react';
+import { Link } from 'react-router-dom';
+import { IconContext } from 'react-icons';
+import { GoHome } from 'react-icons/go';
+import styled, { css } from 'styled-components';
 
 interface ISideDrawerWrapperProps {
   show: boolean,
@@ -19,7 +21,11 @@ class SideDrawer extends React.Component<IProps, {}> {
     return (
       <SideDrawerWrapper show={this.props.show}>
         <TitleAreaWrapper>
-          <TitleWrapper>Menu</TitleWrapper>
+          <TitleWrapper>
+            <a href="/" title="Home">
+              <IconContext.Provider value={{ color: "white", size: "25px" }}><GoHome /></IconContext.Provider>
+            </a>
+          </TitleWrapper>
         </TitleAreaWrapper>
         <ul>
           <Link to="/about">
@@ -57,44 +63,55 @@ const SideDrawerWrapper = styled.nav`
   ${(props: ISideDrawerWrapperProps) =>
     props.show &&
     css`
-        box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5);
-        transform: translateX(0);
-      `}
-  & ul {
+      box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.5);
+      transform: translateX(0);
+    `}
+  
+  @media (min-width: 769px) {
+    display: none;
+  }
+
+  ul {
     height: 100%;
     padding: 0 0;
     margin: 0 0;
     list-style: none;
     justify-content: center;
-  }
-  & li {
-    padding: 1rem 0;
-    padding-left: 1rem;
-    border-bottom: thin solid black;
-    color: black;
-  }
-  & li:hover,
-  & li:active {
-    background-color: #c2203b;
-  }
-  & a {
-    text-decoration: none;
-    font-size: 1.2rem;
-  }
-  @media (min-width: 769px) {
-    display: none;
+
+    a {
+      text-decoration: none;
+      font-size: 2rem;
+
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+
+      li {
+        padding: 1rem 0;
+        padding-left: 3rem;
+        border-bottom: thin solid black;
+        color: #6d7a93;
+
+        &:hover,
+        &:active {
+          background-color: #889bc3;
+          color: #fff;
+        }
+      }
+    }
   }
 `;
 
 const TitleAreaWrapper = styled.div`
     height: 56px;
-    background: #df4848;
+    background: #889bc3;
 `;
 
 const TitleWrapper = styled.p`
     color: white;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 3rem;
     margin: 0;
 `;
