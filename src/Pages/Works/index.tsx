@@ -50,12 +50,12 @@ class Works extends React.Component {
                       <ImageZoom
                         image={{
                           src: `${process.env.PUBLIC_URL}/img/${item.filename}`,
-                          alt: 'Golden Gate Bridge',
+                          alt: `${item.title}`,
                           className: 'site-image'
                         }}
                         zoomImage={{
                           src: `${process.env.PUBLIC_URL}/img/${item.filename}`,
-                          alt: 'Golden Gate Bridge'
+                          alt: `${item.title}`
                         }}
                        />
                     </CardText>
