@@ -1,5 +1,11 @@
 [
   {
+    "title": "ポートフォリオサイト",
+    "url": "https://ulysses0604.github.io/",
+    "charge": "デザイン、React＋TypeScriptコーディング",
+    "filename": "img-renta.jpg"
+  },
+  {
     "title": "隠岐レンタ・リース",
     "url": "https://www.oki-maekawa.com/",
     "charge": "一部デザイン、RailsでのMVC実装、外部の予約管理システムとの連携、SNS広告制作",
@@ -30,19 +36,19 @@
     "filename": "img-mamedagia.jpg"
   },
   {
-    "title": "ちょいのり保険 案内サイト",
+    "title": "1日自動車保険 案内サイト",
     "url": "https://www.tyoinorihoken.com/",
     "charge": "Railsでのサイト更新・変更コーディング",
     "filename": "img-choinori.jpg"
   },
   {
-    "title": "eサイクル保険 案内サイト",
+    "title": "自転車保険 案内サイト",
     "url": "https://tokio.jitensya-hoken.jp/",
     "charge": "Railsでのサイト更新・変更コーディング",
     "filename": "img-ecycle.jpg"
   },
   {
-    "title": "東京海上日動あんしん生命 保険案内サイト",
+    "title": "医療保険・がん保険案内サイト",
     "url": "https://anshin.hoken-alivio.com/",
     "charge": "Railsでの機能追加・レスポンシブ化・更新作業",
     "filename": "img-anshin.jpg"
