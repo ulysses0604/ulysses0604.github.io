@@ -21,9 +21,11 @@ const PageTitle = styled.h1`
   color: #fff;
   
   @media (max-width: 768px) {
-    font-size: 4.8rem;
+    font-size: 3.7rem;
+    letter-spacing: 2px;
     margin: 25vh auto 0;
-    width: 30rem;
+    width: 32rem;
+    font-weight: bold;
   }
 
   @media (min-width: 769px) {
