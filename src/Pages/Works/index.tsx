@@ -127,12 +127,12 @@ const SystemCard = styled(Card)`
     }
 
     p {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
 
       &.card-text {
         text-align: justify;
         margin-bottom: 15px;
-        line-height: 2.2rem;
+        line-height: 2rem;
       }
       &.period {
         font-size: 1.2rem;

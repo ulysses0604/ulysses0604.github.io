@@ -117,7 +117,7 @@ const SkillsToast = styled(Toast)`
 
         li {
           float: left;
-          margin-right: 4rem;
+          margin-right: 3.5rem;
           width: 150px;
           height: 150px;
 

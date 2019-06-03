@@ -21,7 +21,7 @@ const PageTitle = styled.h1`
   color: #fff;
   
   @media (max-width: 768px) {
-    font-size: 4.8rem;
+    font-size: 4.6rem;
     margin-top: 25vh;
   }
 
