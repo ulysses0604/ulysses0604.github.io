@@ -24,11 +24,7 @@ class About extends React.Component {
               </tr>
               <tr>
                 <th>Interests</th>
-                <td>Books, Movies, Drones, Running</td>
-              </tr>
-              <tr>
-                <th>Current Focus</th>
-                <td>React / TypeScript / Machine Learning</td>
+                <td>Books, Movies, Trade U.S. Stocks</td>
               </tr>
               <tr className="icons">
                 <td colSpan={2}>

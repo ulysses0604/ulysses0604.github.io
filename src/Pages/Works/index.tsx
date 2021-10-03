@@ -12,29 +12,6 @@ class Works extends React.Component {
     return (
       <div>
         <h1 className="pagetitle">Works</h1>
-        <CategoryTitle>Web System Developments</CategoryTitle>
-        <CardContainer fluid={true}>
-          <Row>
-            {system.map((item, i) => (
-            <Col key={i} xs="12" lg="4">
-              <SystemCard>
-                <CardBody>
-                  <CardTitle>{item.title}</CardTitle>
-                  <CardText>{item.text}</CardText>
-                  <h3>開発時期</h3>
-                  {item.period ? <p className="period">{item.period}</p> : ""}
-                  <h3>担当業務</h3>
-                  {item.charge ? <p className="charge">{item.charge}</p> : ""}
-                  <h3>開発ツール</h3>
-                  {item.tools ? <p className="tools">{item.tools}</p> : ""}
-                  {item.url ? <SourceLink><a href={item.url} target='_blank' rel="noopener noreferrer">SEE IT ONLINE</a></SourceLink> : ""}
-                </CardBody>
-              </SystemCard>
-            </Col>
-            ))}
-          </Row>
-        </CardContainer>
-
         <CategoryTitle>Website Developments</CategoryTitle>
         <CardContainer fluid={true}>
           <Row>
@@ -62,6 +39,29 @@ class Works extends React.Component {
                   </CardBody>
                 </WebsiteCard>
               </Col>
+            ))}
+          </Row>
+        </CardContainer>
+
+        <CategoryTitle>Web System Developments</CategoryTitle>
+        <CardContainer fluid={true}>
+          <Row>
+            {system.map((item, i) => (
+            <Col key={i} xs="12" lg="4">
+              <SystemCard>
+                <CardBody>
+                  <CardTitle>{item.title}</CardTitle>
+                  <CardText>{item.text}</CardText>
+                  <h3>開発時期</h3>
+                  {item.period ? <p className="period">{item.period}</p> : ""}
+                  <h3>担当業務</h3>
+                  {item.charge ? <p className="charge">{item.charge}</p> : ""}
+                  <h3>開発ツール</h3>
+                  {item.tools ? <p className="tools">{item.tools}</p> : ""}
+                  {item.url ? <SourceLink><a href={item.url} target='_blank' rel="noopener noreferrer">SEE IT ONLINE</a></SourceLink> : ""}
+                </CardBody>
+              </SystemCard>
+            </Col>
             ))}
           </Row>
         </CardContainer>

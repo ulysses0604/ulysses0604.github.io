@@ -113,7 +113,8 @@
       "Bitbucket",
       "Github",
       "Docker",
-      "Redmine"
+      "Redmine",
+      "Microsoft Teams"
     ],
     "icon": [
       "heroku.png",
@@ -122,7 +123,8 @@
       "bitbucket.png",
       "github.png",
       "docker.png",
-      "redmine.png"
+      "redmine.png",
+      "teams.png"
     ]
   }
 ]

@@ -1,56 +1,44 @@
 [
   {
-    "title": "ポートフォリオ（このサイト）",
+    "title": "STANDBY LEAGUE",
+    "url": "https://www.standby-league.co.jp/",
+    "charge": "デザイン/Wordpressで制作/レスポンシブ対応",
+    "filename": "img-standby.jpg"
+  },
+  {
+    "title": "ポートフォリオサイト",
     "url": "https://ulysses0604.github.io/",
-    "charge": "デザイン、React＋TypeScriptコーディング",
+    "charge": "デザイン/React＋TypeScriptで制作",
     "filename": "img-portfolio.jpg"
+  },
+  {
+    "title": "MSUD-JAPAN",
+    "url": "https://msud-japan.com/",
+    "charge": "デザイン/Wordpressで制作",
+    "filename": "img-msud.jpg"
   },
   {
     "title": "隠岐レンタ・リース",
     "url": "https://www.oki-maekawa.com/",
-    "charge": "一部デザイン、RailsでのMVC実装、外部の予約管理システムとの連携、SNS広告制作",
+    "charge": "一部デザイン/Railsで制作/外部の予約管理システムとの連携/SNS広告制作",
     "filename": "img-renta.jpg"
-  },
-  {
-    "title": "海外留学保険 案内サイト",
-    "url": "https://kairyo.hoken-alivio.com/",
-    "charge": "HTMLとWordpressのコーディング・カスタマイズ、フォーム制作、SNS広告制作",
-    "filename": "img-kairyo.jpg"
   },
   {
     "title": "NPO法人らとこんた",
     "url": "https://www.ratokonta.com/",
-    "charge": "サイトデザイン、Railsコーディング、レスポンシブ対応、会員用ログイン、メール配信システム実装",
+    "charge": "サイトデザイン/Railsで制作/レスポンシブ対応/会員向け見守り情報配信システム",
     "filename": "img-ratokonta.jpg"
   },
   {
     "title": "隠岐ウェブ商店街",
     "url": "https://okiwebshop.com/",
-    "charge": "一部サイトデザイン、EC-Cubeカスタマイズと更新、受注管理、SNS広告制作、ブログとFB投稿、メルマガ作成",
+    "charge": "一部サイトデザイン/EC-Cubeカスタマイズと更新/受注管理/SNS広告制作/ブログとFB投稿/メルマガ発行",
     "filename": "img-okiweb.jpg"
-  },
-  {
-    "title": "MAMEDAGIA FES公式サイト",
-    "url": "http://mamedagia.com/",
-    "charge": "個人で引き受けた隠岐の島町からの委託業務。cakePHPで制作",
-    "filename": "img-mamedagia.jpg"
   },
   {
     "title": "1日自動車保険 案内サイト",
     "url": "https://www.tyoinorihoken.com/",
-    "charge": "Railsでのサイト更新・変更コーディング",
+    "charge": "Railsで制作されたサイトの更新",
     "filename": "img-choinori.jpg"
-  },
-  {
-    "title": "自転車保険 案内サイト",
-    "url": "https://tokio.jitensya-hoken.jp/",
-    "charge": "Railsでのサイト更新・変更コーディング",
-    "filename": "img-ecycle.jpg"
-  },
-  {
-    "title": "医療保険・がん保険案内サイト",
-    "url": "https://anshin.hoken-alivio.com/",
-    "charge": "Railsでの機能追加・レスポンシブ化・更新作業",
-    "filename": "img-anshin.jpg"
   }
 ]
