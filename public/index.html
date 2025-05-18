@@ -4,134 +4,35 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
-    <title>特定商取引法に基づく表記｜中の谷2区自治会</title>
-    <style>
-      body {
-        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial, "Noto Sans JP", "Noto Sans", sans-serif;
-        line-height: 1.6;
-        margin: 0;
-        padding: 1rem;
-        background: #fefefe;
-      }
-      h1 {
-        font-size: 1.25rem;
-        margin-bottom: 1rem;
-        text-align: center;
-      }
-      .container {
-        max-width: 80%;
-        margin: 0 auto;
-        padding: 1rem;
-      }
-      table {
-        width: 100%;
-        border-collapse: collapse;
-      }
-      th,
-      td {
-        padding: 0.75rem;
-        border: 1px solid #6c6b6b;
-        vertical-align: top;
-      }
-      th {
-        width: 30%;
-        font-weight: 600;
-        color: #fefefe;
-        font-weight: normal;
-        background: #8e8d8d;
-      }
-      @media (prefers-color-scheme: dark) {
-        body {
-          background: #444;
-          color: #fefefe;
-        }
-        th {
-          background: #8e8d8d;
-        }
-        td,
-        th {
-          border-color: #fefefe;
-        }
-      }
-    </style>
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Yu Nishimura Portfolio Site</title>
   </head>
   <body>
-    <div class="container">
-      <h1>特定商取引法に基づく表記</h1>
-      <p>（Stripe Payment Links を利用した自治会費オンライン決済）</p>
-    
-      <table>
-        <tr>
-          <th>販売事業者の名称</th>
-          <td>中の谷2区自治会（運営請負：Grit Core）</td>
-        </tr>
-        <tr>
-          <th>所在地</th>
-          <td>〒690-0859&nbsp;&nbsp;島根県松江市国屋町213-8</td>
-        </tr>
-        <tr>
-          <th>電話番号</th>
-          <td>ご請求いただければ、遅滞なく開示いたします。</td>
-        </tr>
-        <tr>
-          <th>メールアドレス</th>
-          <td><a href="mailto:contact@gritcore.jp">contact@gritcore.jp</a></td>
-        </tr>
-        <tr>
-          <th>運営統括責任者</th>
-          <td>西村&nbsp;雄（Grit Core 代表）</td>
-        </tr>
-        <tr>
-          <th>追加手数料等</th>
-          <td>
-            消費税（表示価格は税込）、銀行振込を選択された場合は振込手数料が発生します。配送を伴う商品はありません。
-          </td>
-        </tr>
-        <tr>
-          <th>返品・キャンセル<br />(返金ポリシー)</th>
-          <td>
-            決済完了後のキャンセル・返金は原則いたしかねます。二重決済など当方の過誤があった場合は、確認後ただちに全額返金いたします。
-          </td>
-        </tr>
-        <tr>
-          <th>サービス提供時期</th>
-          <td>
-            決済完了と同時に会費納入が完了し、即時有効となります。PDF 領収書は決済完了画面または完了メール内のリンクから即時ダウンロード可能です。
-          </td>
-        </tr>
-        <tr>
-          <th>受け付け可能な決済手段</th>
-          <td>
-            クレジットカード（VISA / Mastercard / JCB&nbsp;他）
-          </td>
-        </tr>
-        <tr>
-          <th>決済時期</th>
-          <td>
-            各決済方法とも、お客様が決済ボタンを押した時点でただちに処理されます。
-          </td>
-        </tr>
-        <tr>
-          <th>販売価格</th>
-          <td>年会費：3,000&nbsp;円（税込）</td>
-        </tr>
-        <tr>
-          <th>申込期限</th>
-          <td>2025&nbsp;年&nbsp;6&nbsp;月&nbsp;1&nbsp;日までにお支払いください。期限を過ぎた場合は後日ご自宅へ集金にお伺いします。</td>
-        </tr>
-        <tr>
-          <th>販売数量の制限</th>
-          <td>お一人様&nbsp;1&nbsp;回（1&nbsp;会員分）のみお支払いください。</td>
-        </tr>
-      </table>
-    
-      <p style="margin-top: 2rem; font-size: 0.875rem;">
-        ※ 本サービスは自治会費のオンライン納付を目的としており、物品の発送を伴いません。領収書は PDF 形式でのみ提供いたします。
-      </p>
-      <a class="privacy_link" href="/privacy.html">プライバシーポリシー</a>
-    </div>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
   </body>
 </html>
